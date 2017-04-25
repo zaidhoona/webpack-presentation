@@ -5,8 +5,7 @@
   "main": "build/bundle.js",
   "repository": {},
   "scripts": {
-    "build": "npm run webpack",
-    "webpack": "webpack",
+    "build": "webpack",
     "start": "webpack-dev-server"
   },
   "keywords": [],
