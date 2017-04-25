@@ -7,6 +7,12 @@
   font-size: 0.8em;
 }
 
+.reveal section img.no-fancy {
+  background-color: transparent;
+  border: 0px;
+  box-shadow: 0 0 0;
+}
+
 .reveal pre code {
   max-height: 800px;
 }
