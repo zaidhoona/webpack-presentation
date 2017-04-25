@@ -1,14 +1,15 @@
-import Reveal from 'reveal';
+import Reveal from 'reveal.js';
 
-var libPath = '../node_modules/reveal.js/';
+var libPath = '/lib/';
 
 Reveal.initialize({
   width: '100%',
   height: '100%',
+  history: true,
   dependencies: [
     // Cross-browser shim that fully implements classList
     { 
-      src: libPath + 'lib/js/classList.js', 
+      src: libPath + 'js/classList.js', 
       condition: function() { 
         return !document.body.classList; 
       } 
