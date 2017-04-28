@@ -1,6 +1,8 @@
 import Reveal from 'reveal';
+import path from 'path';
 
-var libPath = '/lib/';
+var libPath = path.resolve('lib', 'js');
+var pluginPath = path.resolve('lib', 'plugin');
 
 Reveal.initialize({
   width: '100%',
@@ -9,22 +11,22 @@ Reveal.initialize({
   dependencies: [
     // Cross-browser shim that fully implements classList
     { 
-      src: libPath + 'js/classList.js', 
+      src: path.resolve(libPath, 'classList.js'), 
       condition: function() { 
         return !document.body.classList; 
       } 
-    },
+    }, 
 
     // Interpret Markdown in <section> elements
     { 
-      src: libPath + 'plugin/markdown/marked.js', 
+      src: path.resolve(pluginPath, 'markdown', 'marked.js'), 
       condition: function() { 
         return !!document.querySelector( '[data-markdown]' ); 
       } 
     },
 
     { 
-      src: libPath + 'plugin/markdown/markdown.js', 
+      src: path.resolve(pluginPath, 'markdown', 'markdown.js'), 
       condition: function() { 
         return !!document.querySelector( '[data-markdown]' ); 
       }
@@ -32,7 +34,7 @@ Reveal.initialize({
 
     // Syntax highlight for <code> elements
     { 
-      src: libPath + 'plugin/highlight/highlight.js', 
+      src: path.resolve(pluginPath, 'highlight', 'highlight.js'), 
       async: true, 
       callback: function() { 
         hljs.initHighlightingOnLoad(); 
@@ -40,9 +42,9 @@ Reveal.initialize({
     },
 
     // Zoom in and out with Alt+click
-    { src: libPath + 'plugin/zoom-js/zoom.js', async: true },
+    { src: path.resolve(pluginPath, 'zoom-js', 'zoom.js'), async: true },
 
     // Speaker notes
-    { src: libPath + 'plugin/notes/notes.js', async: true }
+    { src: path.resolve(pluginPath, 'notes', 'notes.js'), async: true }
   ]
 });

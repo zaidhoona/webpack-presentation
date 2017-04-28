@@ -2,6 +2,7 @@ let webpack = require('webpack');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 let CopyWebpackPlugin = require('copy-webpack-plugin');
 let CleanWebpackPlugin = require('clean-webpack-plugin');
+let UglifyjsWebpackPlugin = require('uglifyjs-webpack-plugin');
 let path = require('path');
 
 module.exports = {
@@ -31,7 +32,8 @@ module.exports = {
     new CopyWebpackPlugin([ 
       { from: { glob: 'content/*.md' } },
       { from: { glob: 'lib/**/*.*' } } 
-    ])
+    ]),
+    new UglifyjsWebpackPlugin()
   ],
   devServer: {
     port: 3000
