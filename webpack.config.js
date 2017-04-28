@@ -13,6 +13,9 @@ module.exports = {
     path: path.join(__dirname, 'build'),
     filename: '[name].[hash].js'
   },
+  externals: {
+    'reveal': 'Reveal'
+  },
   module: {
     loaders: [
       { test: /\.css$/, use: [ { loader:'style-loader' }, { loader: 'css-loader' }] },

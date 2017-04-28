@@ -1,4 +1,4 @@
-import Reveal from 'reveal.js';
+import Reveal from 'reveal';
 
 var libPath = '/lib/';
 
