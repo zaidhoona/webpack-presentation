@@ -31,7 +31,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([ 
       { from: { glob: 'content/*.md' } },
-      { from: { glob: 'lib/**/*.*' } } 
+      { from: 'assets' }
     ]),
     new UglifyjsWebpackPlugin()
   ],
