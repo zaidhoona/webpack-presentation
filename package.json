@@ -6,7 +6,8 @@
   "repository": {},
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "deploy": "npm run build & firebase deploy"
   },
   "keywords": [],
   "author": "",
@@ -25,5 +26,8 @@
   "dependencies": {
     "highlight.js": "9.6.0",
     "reveal.js": "3.3.0"
+  },
+  "peerDependencies": {
+    "firebase-tools": "^3.7.0"
   }
 }
