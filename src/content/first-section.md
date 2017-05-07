@@ -74,8 +74,7 @@ Note:
 {
   "name": "my-project",
   "version": "1.0.0",
-  "description": "...",,
-  "repository": {},
+  "description": "...",
   "scripts": {
     ...
   },
