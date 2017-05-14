@@ -1,13 +1,13 @@
-import Reveal from 'reveal';
 import path from 'path';
 
-var libPath = path.resolve('lib', 'js');
-var pluginPath = path.resolve('lib', 'plugin');
+const libPath = path.resolve('lib', 'js');
+const pluginPath = path.resolve('lib', 'plugin');
 
 Reveal.initialize({
   width: '100%',
   height: '100%',
   history: true,
+  mouseWheel: true,
   dependencies: [
     // Cross-browser shim that fully implements classList
     { 
