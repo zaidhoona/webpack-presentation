@@ -245,7 +245,7 @@ Note:
 - Fast*
 - Reliable
 - Secure
-- [yarnpkg.com](https://yarnpkg.com/)
+- Link: [yarnpkg.com](https://yarnpkg.com/)
 
 Note:
 - Facebook
@@ -264,7 +264,7 @@ Note:
 - Task runner
 - Easily programable interface
 - Efficient Builds
-- [gulpjs.com](http://gulpjs.com/)
+- Link: [gulpjs.com](http://gulpjs.com/)
 
 Note:
 - By preferring code over configuration
@@ -305,4 +305,4 @@ Note:
   scoop install nodejs
 ```
 - After installtion adds to the enviornment variables
-- [http://scoop.sh/](http://scoop.sh/)
+- Link: [http://scoop.sh/](http://scoop.sh/)
