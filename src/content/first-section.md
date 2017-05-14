@@ -229,13 +229,19 @@ Note:
 
 ---
 
-# Other node plugins and tools
+# Node packages and other tools
 
 +++
 
-<!-- .slide: data-background="#A52E32" -->
+# Node packages
 
-![yarn logo](/img/yarn-logo.png "Yarn logo") <!-- .element: width="64px" height="64px" class="no-fancy"-->
++++
+
+<!-- .slide: data-background="#558CBB" -->
+
+<center>
+  ![yarn logo](/img/yarn-logo-bordered.png "Yarn logo") <!-- .element: class="no-fancy" --> 
+</center>
 
 +++
 
@@ -259,6 +265,14 @@ Note:
 
 +++
 
+<!-- .slide: data-background="#D44B48" -->
+
+<center>
+  ![gulp logo](/img/gulp-logo.png "Gulp logo") <!-- .element: class="no-fancy"-->
+</center>
+
++++
+
 ## Gulp ![gulp logo](/img/gulp-logo.png "Gulp logo") <!-- .element: width="64px" height="64px" class="no-fancy"-->
 
 - Task runner
@@ -270,6 +284,14 @@ Note:
 - By preferring code over configuration
 - Streaming build system
 - Has a lots of plugins
+
++++
+
+<!-- .slide: data-background="#8D6748" -->
+
+<center>
+  ![mocha logo](/img/mocha-logo.png "Mocha logo") <!-- .element: class="no-fancy"-->
+</center>
 
 +++
 
@@ -292,6 +314,10 @@ Note:
 Note:
 - Current presentation is made by the same node package
 - Has many features like vertical slides, background video loading, 
+
++++
+
+# Tools
 
 +++
 
