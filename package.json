@@ -24,8 +24,8 @@
     "webpack-dev-server": "^2.4.2"
   },
   "dependencies": {
-    "highlight.js": "9.6.0",
-    "reveal.js": "3.3.0"
+    "highlight.js": "^9.6.0",
+    "reveal.js": "^3.3.0"
   },
   "peerDependencies": {
     "firebase-tools": "^3.7.0"
