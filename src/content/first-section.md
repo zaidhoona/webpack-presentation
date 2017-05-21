@@ -8,7 +8,9 @@
 - Package installations
 - Sample node cli application
 
+
 ---
+
 
 ## NPM
 
@@ -26,7 +28,9 @@ Note:
   - generally you hear the names in the serve creation
   - many other applications were creation of the node platform (crazy thing :- NodeOS)
 
+
 +++
+
 
 ## New to NPM?
 
@@ -34,7 +38,7 @@ Note:
 - Add to the path variable (optional)
 - To create a node project
 
-```bash
+```sh
 $ npm init
 ...
 name: (project)
@@ -43,7 +47,9 @@ description:
 ...
 ```
 
+
 ---
+
 
 ## `package.json`
 
@@ -56,7 +62,9 @@ Note:
 - You can directly install a package without using package.json
 - Its better to have it in 
 
+
 +++
+
 
 ## Minimum `package.json`
 
@@ -67,7 +75,9 @@ Note:
 }
 ```
 
+
 +++
+
 
 ## Example `package.json`
 
@@ -92,11 +102,15 @@ Note:
 Note:
 Initial package.json can be created by the command `npm init`
 
+
 ---
+
 
 # Install dependencies
 
+
 +++
+
 
 ## Instal a new package
 
@@ -108,16 +122,20 @@ Initial package.json can be created by the command `npm init`
     - Saved in global folder
     - Common to all the projects
 
+
 +++
+
 
 Let's try using 
 
-```bash
+```sh
 $ npm install jquery
 ``` 
 and look at `package.json`
 
+
 +++
+
 
 package.json
 ```json 
@@ -131,7 +149,9 @@ package.json
 - <!-- .element: class="fragment"--> Where is the dependency?
 - <!-- .element: class="fragment"--> Dependency is only listed in the `package.json` if we use the `--save` or `-S` flag  
 
+
 +++
+
 
 Let's try again using 
 ```sh
@@ -139,7 +159,9 @@ $ npm install --save jquery
 ```
 and look at `package.json`
 
+
 +++
+
 
 package.json
 ```json 
@@ -159,7 +181,9 @@ dependency
 - Global folder is configurable, currently in the latest version the packages get saved into the node 
 installation directory
 
+
 +++
+
 
 ## Dependency types
 
@@ -172,11 +196,15 @@ installation directory
   - eg: styles, @types
   - `npm install --save-optional || npm install -O`
 
+
 ---
+
 
 #Essential Configurations
 
+
 +++
+
 
 ## Proxy settings
 
@@ -185,7 +213,9 @@ installation directory
 $ npm config set http_proxy "http://<username>:<password>@<server>:<port>"
 ```
 
+
 +++
+
 
 ## Cache and Prefix
 
@@ -207,7 +237,9 @@ $ npm config set http_proxy "http://<username>:<password>@<server>:<port>"
 Note:
 - New versions of npm the global modules are installed where the node is installed
 
+
 +++
+
 
 ## Editing configuration manually
 
@@ -223,27 +255,37 @@ prefix = C:\...
 Note: 
 - This file can also be project specific having project specific settings
 
+
 ---
+
 
 # Lets look at some examples
 
+
 ---
+
 
 # Node packages and other tools
 
+
 +++
+
 
 # Node packages
 
+
 +++
+
 
 <!-- .slide: data-background="#558CBB" -->
 
 <center>
-  ![yarn logo](/img/yarn-logo-bordered.png "Yarn logo") <!-- .element: class="no-fancy" --> 
+  ![yarn logo](/img/yarn-logo-bordered.png "Yarn logo") <!-- .element: class="no-fancy" -->
 </center>
 
+
 +++
+
 
 ## Yarn ![yarn logo](/img/yarn-logo.png "Yarn logo") <!-- .element: width="64px" height="64px" class="no-fancy"-->
 
@@ -251,7 +293,18 @@ Note:
 - Fast*
 - Reliable
 - Secure
-- Link: [yarnpkg.com](https://yarnpkg.com/)
+- eg:
+<!-- .element: class="fragment" data-fragment-index="1" -->
+```sh 
+  $ yarn add jquery
+```
+<!-- .element: class="fragment" data-fragment-index="1" -->
+```sh 
+  $ yarn remove jquery
+``` 
+<!-- .element: class="fragment" data-fragment-index="1" -->
+- Link: <!-- .element: class="fragment" data-fragment-index="2" --> 
+[yarnpkg.com](https://yarnpkg.com/) <!-- .element: class="fragment" data-fragment-index="2" -->
 
 Note:
 - Facebook
@@ -263,7 +316,9 @@ Note:
 - Resolve mismatching versions of dependencies to a single version to avoid creating duplicates.
 - `yarn add` and `yarn add -D` example
 
+
 +++
+
 
 <!-- .slide: data-background="#D44B48" -->
 
@@ -271,7 +326,9 @@ Note:
   ![gulp logo](/img/gulp-logo.png "Gulp logo") <!-- .element: class="no-fancy"-->
 </center>
 
+
 +++
+
 
 ## Gulp ![gulp logo](/img/gulp-logo.png "Gulp logo") <!-- .element: width="64px" height="64px" class="no-fancy"-->
 
@@ -285,7 +342,9 @@ Note:
 - Streaming build system
 - Has a lots of plugins
 
+
 +++
+
 
 <!-- .slide: data-background="#8D6748" -->
 
@@ -293,7 +352,9 @@ Note:
   ![mocha logo](/img/mocha-logo.png "Mocha logo") <!-- .element: class="no-fancy"-->
 </center>
 
+
 +++
+
 
 ## Mocha ![mocha logo](/img/mocha-logo.png "Mocha logo") <!-- .element: width="64px" height="64px" class="no-fancy"-->
 
@@ -302,7 +363,15 @@ Note:
 - Asynchronous testing (waiting for the result in the promises)
 - [mochajs.org](https://mochajs.org/)
 
+
 +++
+
+
+# Reveal.js
+
+
++++
+
 
 ## Reveal.js
 
@@ -315,11 +384,15 @@ Note:
 - Current presentation is made by the same node package
 - Has many features like vertical slides, background video loading, 
 
+
 +++
+
 
 # Tools
 
+
 +++
+
 
 ## Scoop.sh
 
@@ -332,3 +405,15 @@ Note:
 ```
 - After installtion adds to the enviornment variables
 - Link: [http://scoop.sh/](http://scoop.sh/)
+
+
++++
+
+
+## VSCode
+
+- Electron Application
+- Code / Text Editor
+- Debugging
+- Plugins
+- Build on CSS, HTML, Javascript, Nodejs
